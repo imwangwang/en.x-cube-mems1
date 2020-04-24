@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rules>
+	<rule name="MEMS variant change FIFOContinuousMode into FIFOContMode">
+		<description>
+			<MXDBVersion/>
+			<MatcherOnKey>.*X-CUBE-MEMS1.*</MatcherOnKey>
+			<MatcherPattern>(.*)FIFOContinuousMode(.*)</MatcherPattern>
+			<MatchToPattern>$1FIFOContMode$2</MatchToPattern>   
+			<SeparatorOnValue>__No_Separator</SeparatorOnValue>
+		</description>
+	</rule>
+</rules>
